@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title><Eeman</title>
+    <style>
+      .blue {
+            background-color: #0056b3;
+        }
+        .text-blue{
+          color:#0056b3;
+        }
+        .img{
+            background-image: url('https://portals.au.edu.pk/ICO/Content/images/banner.jpg');
+             background-size: cover;
+              background-position: center; 
+              height: 100vh;
+        }
+        .btn-blue {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+        .image1{
+          background-image:url('https://www.stanford.edu/wp-content/uploads/2024/08/yannie-banner.png');
+        }
+        .image2{
+          background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxeEc2yvUNoT9gQ8kHf3VggX9NFuCQN5xQ&s');
+        }
+        
+        .btn:not(:last-child)::after {
+              content: "|";
+              padding-left: 10px;
+              padding-right: 10px;
+              color: #000; /* Change color to match your design */
+            }
+           . font{
+            font-family: 'Open Sans', sans-serif;
+            }
+            .fixed{
+              background-attachment: fixed;
+            }
+            .blur-image {
+      transition: filter 0.5s ease; /* Smooth transition for blur effect */
+    }
+    .text-overlay {
+      opacity: 0;
+      transition: opacity 0.5s ease; /* Smooth transition for text visibility */
+    }
+    .text-overlay.visible {
+      opacity: 1;
+    }
+    .blur-image.blurred {
+      filter: blur(5px); /* Adjust the blur level here */
+    }
+   
+        .section2 {
+            background-color:transparent;
+        }
+
+        
+        .navbar-transparent {
+            background-color: transparent !important;
+            transition: background-color 0.3s ease;
+        }
+
+        .row-white {
+            background-color: white !important;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Red (blue) background row */
+        .row-blue {
+            background-color: #dc3545 !important; /* Red background */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .profile-img {
+        width: 150px; /* Set width */
+        height: 150px; /* Set height */
+        object-fit: cover; /* Ensure image is contained within the circle */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: 1;
+    }
+
+    .bg-image {
+        position: relative;
+        height: 400px; /* Set the height of the background image */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+
+<section class="position-relative flex ">
+  
+<div class="img fixed">
+<div class="fixed-top blue">
+    <div class="row ">
+ <div class="col-md-6">
+    <h3 class="navbar-brand text-light fw-bold font">Air University</h3>
+ </div>
+ <div class="col-md-6 ml-0">
+    <nav class="navbar navbar-expand-lg navbar-light  position-absolute top-0 left-0 w-100 z-index-5">
+        <a class="navbar-brand text-light h-6 " href="#">Information for:</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-light h6" aria-current="page" href="#">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light h6" href="#">Families</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light h6" href="#">alumini</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light h6" href="#">Visitors</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light h6" href="#">Search</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+</div></div>
+<div class="row" >
+  <nav class="navbar navbar-expand-lg navbar-light top-0 left-0 w-100 z-index-5 offset-3">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active text-light fw-bold" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="#">Campus Life</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light fw-bold"  href="#">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fw-bold" href="#">Health Care</a>
+      </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#">About</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+</div></div>
+
+   
+ 
+    <div class="position-absolute top-50 start-50 translate-middle text-white fs-1 fw-bold font">
+        Air University
+    </div></div>
+  </div>
+  <div class="row blue text-center text-light fixed" >
+    <h4 class="fw-bold">Explore Air</h4>
+  </div>
+</section>
+
+<section class="section2 bg-light" id="section2">
+    <div class="container bg-light text-center mt-5">
+          
+        <h1 class="text-center fw-bold mt-3">A Societal Mission</h1>
+        <h1 class=" text-center fw-light mt-3">
+            Stanford was founded almost 150 years ago on a bedrock of societal purpose.<br> Our mission is to contribute to the world by educating students for <br> lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity; leading in pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact.
+        </h1>
+            
+        <div class="btn btn-blue mt-5 mb-5">More about Air uni</div>
+    </div>
+</section>
+<section>
+  <div class="container mt-5 text-center">
+      <h1 class="fw-bold mt-5">Campus News</h1>
+      <h5 class="mt-3">Stories about people, research, and innovation across the Farm</h5>
+  
+      <div class="row m-3 mt-5">
+          <div class="col-md-6 mb-4">
+              <div class="card h-100 text-white shadow-lg">
+                  <img src="data:image/jpeg;base64,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" class="card-img" alt="Health & Medicine">
+                  <div class="card-img-overlay d-flex align-items-end bg-dark bg-opacity-50">
+                      <div>
+                          <h5 class="card-title fw-bold">Health & Medicine</h5>
+                          <p class="card-text fw-bold">Stanford was founded almost 150 years ago on a bedrock of societal purpose.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-md-3 mb-4">
+              <div class="card h-100 shadow-lg">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR122OvTz-fY_GY278cqNtPebwoS8aQoLtCFg&s" class="card-img-top" alt="Business">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold text-blue">Business</h5>
+                      <p class="card-text fw-bold">Mapping the maze where the IRS could find billions in unpaid taxes.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card h-100 shadow-lg">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR122OvTz-fY_GY278cqNtPebwoS8aQoLtCFg&s" class="card-img-top" alt="Business">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold text-blue">Business</h5>
+                      <p class="card-text fw-bold">Mapping the maze where the IRS could find billions in unpaid taxes.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row m-3">
+          <div class="col-md-3 mb-4">
+              <div class="card h-100 shadow-lg">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR122OvTz-fY_GY278cqNtPebwoS8aQoLtCFg&s" class="card-img-top" alt="Business">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold text-blue">Business</h5>
+                      <p class="card-text fw-bold">Mapping the maze where the IRS could find billions in unpaid taxes.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 mb-4">
+              <div class="card h-100 shadow-lg">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR122OvTz-fY_GY278cqNtPebwoS8aQoLtCFg&s" class="card-img-top" alt="Business">
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold text-blue">Business</h5>
+                      <p class="card-text fw-bold">Mapping the maze where the IRS could find billions in unpaid taxes.</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+              <div class="card h-100 text-white shadow-lg">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMjWEVmkBOqvk82M4u8-KCku65x9nCOLj-g&s" class="card-img" alt="Health & Medicine">
+                  <div class="card-img-overlay d-flex align-items-end bg-dark bg-opacity-50">
+                      <div>
+                          <h5 class="card-title fw-bold">Health & Medicine</h5>
+                          <p class="card-text fw-bold">Stories about people, research, and innovation across the Farm</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="text-center">
+          <button class="btn btn-blue mt-4 mb-5">More about Air Uni</button>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container ">
+    <h1 class="text-center fw-bold">Academics</h1>
+    <h5 class="text-center text-center mt-5">Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</h5>
+    <div class="row mt-5 m-3">
+      <div class="col-md-4">
+          <div class="card border-0">
+          <img src="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg" class="img-fluid" alt="Academics">
+          <h3 class="mt-3"> UG Programs</h3>
+          <p>Explore a range of UG Programs and majors.</p>
+          <h5 class="text-primary">Undergraduate </h5>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20220714Hopkins_Marine_Station_N6A7270-1-scaled.jpg" class="img-fluid" alt="Graduate Programs">
+          <h3 class="mt-4">Graduate Programs</h3>
+          <p>Delve into world-class graduate programs across various disciplines.</p>
+          <h5 class="text-primary ">Latest </h5>
+        </div></div>
+      <div class="col-md-4">
+        <div class="card border-0"></div>
+          <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20211117_Elizabeth_Reese_N6A0441-scaled.jpg" class="img-fluid" alt="Continuing Education">
+          <h3 class="mt-4">Driving impact</h3>
+          <p>Stanford offers extensive professional development and continuing education.</p>
+          <h5 class="text-primary">Lifelong Learning</h5>
+
+        </div></div>
+          <div class="text-center  d-flex flex-column align-items-center justify-content-center">
+            <h2 class="text-center fw-bold mt-5">Seven schools in which to pursue your passions</h2>
+            <div class="d-flex justify-content-center text-primary mt-3">
+              <div class="btn mx-2 text-primary">Medicine</div>
+              <div class="btn mx-2 text-primary">Law</div>
+              <div class="btn mx-2 text-primary">Humanities</div>
+              <div class="btn mx-2 text-primary">Engineering</div>
+              <div class="btn mx-2 text-primary">Comp Sci</div>
+              <div class="btn mx-2 text-primary">English</div>
+            </div>
+            <div class="btn btn-blue mt-5 mb-5">More about Academics</div>
+          </div>
+         
+</section>
+
+
+
+<section>
+  
+  <div class="bg-image"
+    style="background-image:url('https://www.stanford.edu/wp-content/uploads/2024/08/Tadashi-homesite.jpg'); height: 100vh; background-size: cover; background-position: center;">
+    <div class="overlay"></div>
+    <div class="content text-center text-white d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+        <img src="https://www.stanford.edu/wp-content/uploads/2024/08/Tadashi-homesite-profile-240x240.png"
+            alt="Profile" class="profile-img rounded-circle mb-3">
+        <blockquote class="blockquote text-center">
+            <p>“When I ‘decided’ to become a mathematician, it was not a decision. I could not do otherwise. You
+                don’t decide to fall in love with somebody. It just happens.”</p>
+        </blockquote>
+        <footer class="blockquote-footer text-white fw-bold mt-3">
+            Tadashi Tokieda <br>
+            <small>Professor (Teaching) of Mathematics</small>
+        </footer>
+        <a href="#" class="btn btn-link text-white mt-2">More ></a>
+    </div>
+</div>
+
+
+</section>
+
+<section>
+  <div class="container text-center  d-flex flex-column align-items-center justify-content-center mt-5">
+  <h1 class="text-center fw-bold">Research</h1>
+    <h5 class="text-center text-center mt-2">Preparing students to make meaningful contributions to society</h5>
+    <hr>
+    <div class="row">
+    <div class="col-md-4">
+      <h2 class="fw-bold">15 Institutes</h2>
+      <h4>cross disciplinary boundaries</h4>
+     </div>
+     <div class="col-md-4">
+      <h2 class="fw-bold">20 Libraries</h2>
+      <h4>cross disciplinary boundaries</h4>
+     </div>
+     <div class="col-md-4">
+      <h2 class="fw-bold">$1.98 Billion</h2>
+      <h4>cross disciplinary boundaries</h4>
+     </div></div>
+     <hr>
+
+
+    <div class="btn btn-blue  mb-3">More about Academics</div>
+  </div>
+  </section>
+
+  <section>
+    <div class="container bg-light">
+      <h1 class="text-center fw-bold">Health Care</h1>
+      <h5 class="text-center text-center mt-5">Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</h5>
+      <div class="row mt-5 m-3">
+          <div class="col-md-4">
+              <div class="card border-0">
+              <img src="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg" class="img-fluid" alt="Academics">
+              <h3 class="mt-3"> UG Programs</h3>
+              <p>Explore a range of UG Programs and majors.</p>
+              <h5 class="text-primary">Undergraduate </h5>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20220714Hopkins_Marine_Station_N6A7270-1-scaled.jpg" class="img-fluid" alt="Graduate Programs">
+              <h3 class="mt-4">Graduate Programs</h3>
+              <p>Delve into world-class graduate programs across various disciplines.</p>
+              <h5 class="text-primary ">Latest </h5>
+            </div></div>
+          <div class="col-md-4">
+            <div class="card border-0"></div>
+              <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20211117_Elizabeth_Reese_N6A0441-scaled.jpg" class="img-fluid" alt="Continuing Education">
+              <h3 class="mt-4">Driving impact</h3>
+              <p>Stanford offers extensive professional development and continuing education.</p>
+              <h5 class="text-primary">Lifelong Learning</h5>
+  
+            </div></div>
+            <div class="text-center  d-flex flex-column align-items-center justify-content-center">
+              
+              <div class="btn btn-blue mt-5 mb-5">More about Academics</div>
+            </div>
+           
+  </section>
+  
+  <section>
+    <div class="container ">
+      <div class="bg-image"
+      style="background-image:url('https://www.stanford.edu/wp-content/uploads/2024/08/yannie-banner.png'); background-size: cover; background-position: center; height: 100vh;">
+  
+      <div class="overlay"></div>
+      <div class="content text-center text-white d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+          <img src="https://www.stanford.edu/wp-content/uploads/2024/08/yannie-240x240.png" alt="Profile"
+              class="profile-img rounded-circle mb-3">
+          <blockquote class="blockquote">
+              <p>“When I ‘decided’ to become a mathematician, it was not a decision. I could not do otherwise. You
+                  don’t decide to fall in love with somebody. It just happens.”</p>
+          </blockquote>
+          <footer class="blockquote-footer text-white fw-bold mt-3">
+              Tadashi Tokieda <br>
+              <small>Professor (Teaching) of Mathematics</small>
+          </footer>
+          <a href="#" class="btn btn-link text-white mt-2">More ></a>
+      </div>
+  </div>
+  
+  </div>
+    
+  </section>
+  
+  <section>
+    <div class="container ">
+      <h1 class="text-center fw-bold">Campus Life</h1>
+      <h5 class="text-center text-center mt-5">Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</h5>
+      <div class="row mt-5 m-3">
+        <div class="col-md-4">
+            <div class="card border-0">
+            <img src="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg" class="img-fluid" alt="Academics">
+            <h3 class="mt-3"> UG Programs</h3>
+            <p>Explore a range of UG Programs and majors.</p>
+            <h5 class="text-primary">Undergraduate </h5>
+        </div>
+      </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20220714Hopkins_Marine_Station_N6A7270-1-scaled.jpg" class="img-fluid" alt="Graduate Programs">
+            <h3 class="mt-4">Graduate Programs</h3>
+            <p>Delve into world-class graduate programs across various disciplines.</p>
+            <h5 class="text-primary ">Latest </h5>
+          </div></div>
+        <div class="col-md-4">
+          <div class="card border-0"></div>
+            <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20211117_Elizabeth_Reese_N6A0441-scaled.jpg" class="img-fluid" alt="Continuing Education">
+            <h3 class="mt-4">Driving impact</h3>
+            <p>Stanford offers extensive professional development and continuing education.</p>
+            <h5 class="text-primary">Lifelong Learning</h5>
+
+          </div></div>
+            <div class="text-center  d-flex flex-column align-items-center justify-content-center">
+              
+              <div class="btn btn-blue mt-5 mb-5">More about Academics</div>
+            </div>
+           
+  </section>
+<section>
+  <div class="container bg-light">
+    <h1 class="text-center fw-bold">Athletics</h1>
+    <h5 class="text-center text-center mt-5">Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world</h5>
+    <div class="row mt-5 m-3">
+      <div class="col-md-4">
+          <div class="card border-0">
+          <img src="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg" class="img-fluid" alt="Academics">
+          <h3 class="mt-3"> UG Programs</h3>
+          <p>Explore a range of UG Programs and majors.</p>
+          <h5 class="text-primary">Undergraduate </h5>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20220714Hopkins_Marine_Station_N6A7270-1-scaled.jpg" class="img-fluid" alt="Graduate Programs">
+          <h3 class="mt-4">Graduate Programs</h3>
+          <p>Delve into world-class graduate programs across various disciplines.</p>
+          <h5 class="text-primary ">Latest </h5>
+        </div></div>
+      <div class="col-md-4">
+        <div class="card border-0"></div>
+          <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20211117_Elizabeth_Reese_N6A0441-scaled.jpg" class="img-fluid" alt="Continuing Education">
+          <h3 class="mt-4">Driving impact</h3>
+          <p>Stanford offers extensive professional development and continuing education.</p>
+          <h5 class="text-primary">Lifelong Learning</h5>
+
+        </div></div>
+          <div class="text-center  d-flex flex-column align-items-center justify-content-center">
+          
+            <div class="btn btn-blue mt-5 mb-5">More about Academics</div>
+          </div>
+         
+</section>
+<section>
+  <div class="container ">
+    <h1 class="text-center fw-bold">Addmissions</h1>
+    <h5 class="text-center text-center mt-5">Offering extraordinary freedom to explore, to collaborate, and to challenge yourself</h5>
+    <div class="row">
+      <img src="https://www.stanford.edu/wp-content/uploads/2022/08/Maya-admission.jpg" alt="">
+    </div>
+    <div class="row mt-5 m-3">
+        <div class="col-md-6">
+            <h6 class="fw-bold">Explore the possibilities of a Stanford education as you map out your college journey.</h6>
+          <h6 class="fw-light">We look for distinctive students who exhibit an abundance of energy and curiosity in their classes, activities, projects, research, and lives.</h6>
+          </div>
+        <div class="col-md-6">
+          <h6 class="fw-bold">Explore the possibilities of a Stanford education as you map out your college journey.</h6>
+          <h6 class="fw-light">We look for distinctive students who exhibit an abundance of energy and curiosity in their classes, activities, projects, research, and lives.</h6>
+          </div>
+          </div>
+       </div>
+          <div class="text-center  d-flex flex-column align-items-center justify-content-center">
+            
+            <div class="btn btn-blue mt-5 mb-5">More about Academics</div>
+          </div>
+         
+</section>
+<section>
+  <img src="https://nealschaffer.com/wp-content/uploads/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="" class="w-100 " height="400px">
+     <div class="d-flex justify-content-end bg-light" >
+      <i class="fa-brands fa-facebook m-3" height="20x" width="20px"></i>
+      <i class="fa-brands fa-twitter m-3"></i>
+      <i class="fa-brands fa-instagram m-3"></i>
+      <i class="fa-brands fa-linkedin m-3"></i>
+      <i class="fa-brands fa-apple m-3"></i>
+
+     </div>
+</section>
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-2">
+        <h5 class="fw-bold text-blue">SCHOOLS</h5>
+        <h5>
+
+          Business  Education Engineering Humanities & Sciences Law Medicine Sustainability</h5>
+      </div>
+      <div class="col-md-2">
+        <h5 class="fw-bold text-blue">Academics</h5>
+        <h5>Undergraduate Majors Graduate Programs</h5>
+
+        <h5 class="fw-bold text-blue">Research</h5>
+        <h5>Undergraduate Majors Graduate Programs</h5>
+
+      </div>
+      <div class="col-md-2">
+        <h5 class="fw-bold text-blue">Academics</h5>
+        <h5>Undergraduate Majors Graduate Programs</h5>
+
+        <h5 class="fw-bold text-blue">Research</h5>
+        <h5>Undergraduate  Graduate Programs</h5>
+
+
+      </div>
+      <div class="col-md-2">
+        <h5 class="fw-bold text-blue">Academics</h5>
+        <h5>Undergraduate Majors Graduate Programs</h5>
+
+        <h5 class="fw-bold text-blue">Research</h5>
+        <h5>Undergraduate Majors Graduate</h5>
+
+      </div>
+      <div class="col-md-2">
+        <h5 class="fw-bold text-blue">Academics</h5>
+        <h5>Undergraduate Majors Graduate Programs</h5>
+
+        <h5 class="fw-bold text-blue">Research</h5>
+        <h5>Undergraduate Majors Graduate Programs</h5>
+
+      </div>
+      <div class="col-md-2">
+
+        <button class="m-3 shadow-lg text-center" height="20px" width="30px">Applying</button>
+        <button class="m-3 shadow-lg" height="20px" width="30px">Visiting</button>
+        <button class="m-3 shadow-lg" height="20px" width="30px">Commiting</button>
+        <button class="m-3 shadow-lg" height="20px" width="30px">Career</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="blue ">
+  <div class="container  text-white mt-3">
+    <div class="row mt-3" >
+    <div class="col-md-2 mt-3">
+      <h4 class="fw-bold">Stanford</h4> 
+      <h4>University</h4>
+    </div>
+    <div class="col-md-8 mt-3">
+      <h6 class="fw-bold">
+        Stanford Home   Maps & Directions   Search Stanford    Emergency Info</h6>
+    <h6> Privacy   Copyright   Trademarks    Non-Discrimination    Accessibility
+        ©Copyright    Stanford University.     Stanford, California 94305.</h6>
+    
+      </div></div>
+  </div>
+</section>
+
+
+
+<script>
+  // JavaScript to observe when the image container is in view
+  const imageContainer = document.querySelector('.container');
+  const textOverlay = document.querySelector('.text-overlay');
+  const image = document.querySelector('.blur-image');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        textOverlay.classList.add('visible');
+        image.classList.add('blurred');
+      } else {
+        textOverlay.classList.remove('visible');
+        image.classList.remove('blurred');
+      }
+    });
+  });
+   observer.observe(imageContainer);
+   window.onscroll = function() {
+  changeRowColor();
+};
+
+// Ensure the elements exist before adding listeners
+const row1 = document.getElementById('row1');
+const row2 = document.getElementById('row2');
+const section2 = document.getElementById('section2');
+
+// Check if elements were selected correctly
+if (row1 && row2 && section2) {
+  const section2Offset = section2.offsetTop;
+
+  function changeRowColor() {
+    if (window.pageYOffset >= section2Offset) {
+      row1.classList.add('row-blue');
+      row1.classList.remove('row-white');
+      row2.classList.add('row-blue');
+      row2.classList.remove('row-white');
+    } else {
+      row1.classList.remove('row-blue');
+      row1.classList.add('row-white');
+      row2.classList.remove('row-blue');
+      row2.classList.add('row-white');
+    }
+  }
+} else {
+  console.error('One or more elements were not found. Please check IDs in the HTML.');
+}
+
+
+</script>
+
+
+
+
+</body>
+</html> 
